@@ -1,0 +1,114 @@
+Dumping remainder:
+FunctionDecl 0x17a73051d60 <C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt_math.h:557:29, col:84> col:44 remainder 'double (double, double) __attribute__((cdecl))':'double (double, double)'
+|-ParmVarDecl 0x17a73051c00 <col:59, col:66> col:66 _X 'double'
+|-ParmVarDecl 0x17a73051c88 <col:75, col:82> col:82 _Y 'double'
+|-BuiltinAttr 0x17a73051e18 <<invalid sloc>> Implicit 1136
+`-NoThrowAttr 0x17a73051e78 <col:44> Implicit
+
+Dumping remainderf:
+FunctionDecl 0x17a731e5710 <C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt_math.h:601:29, col:86> col:47 remainderf 'float (float, float) __attribute__((cdecl))':'float (float, float)'
+|-ParmVarDecl 0x17a731e55b0 <col:63, col:69> col:69 _X 'float'
+|-ParmVarDecl 0x17a731e5638 <col:78, col:84> col:84 _Y 'float'
+|-BuiltinAttr 0x17a731e57c8 <<invalid sloc>> Implicit 1137
+`-NoThrowAttr 0x17a731e5828 <col:47> Implicit
+
+Dumping remainderl:
+FunctionDecl 0x17a731f6458 <C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt_math.h:954:29, col:100> col:49 remainderl 'long double (long double, long double) __attribute__((cdecl))':'long double (long double, long double)'
+|-ParmVarDecl 0x17a731f60e0 <col:65, col:77> col:77 _X 'long double'
+|-ParmVarDecl 0x17a731f6168 <col:86, col:98> col:98 _Y 'long double'
+|-BuiltinAttr 0x17a731f6510 <<invalid sloc>> Implicit 1138
+`-NoThrowAttr 0x17a731f6570 <col:49> Implicit
+
+Dumping std::domain_error:
+CXXRecordDecl 0x17a73da0c28 <C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\stdexcept:36:13, line:50:1> line:36:19 class domain_error definition
+|-DefinitionData polymorphic has_user_declared_ctor can_const_default_init
+| |-DefaultConstructor
+| |-CopyConstructor simple non_trivial has_const_param needs_implicit implicit_has_const_param
+| |-MoveConstructor exists simple non_trivial needs_implicit
+| |-CopyAssignment simple non_trivial has_const_param implicit_has_const_param
+| |-MoveAssignment exists simple non_trivial
+| `-Destructor simple non_trivial
+|-public 'logic_error':'std::logic_error'
+|-MaxFieldAlignmentAttr 0x17a73da0ce0 <<invalid sloc>> Implicit 64
+|-CXXRecordDecl 0x17a73da0de8 <col:13, col:19> col:19 implicit referenced class domain_error
+|-AccessSpecDecl 0x17a73da0e78 <line:37:1, col:7> col:1 public
+|-TypeAliasDecl 0x17a73da0eb8 <line:38:5, col:21> col:11 referenced _Mybase 'logic_error':'std::logic_error'
+| `-ElaboratedType 0x17a73da0020 'logic_error' sugar
+|   `-RecordType 0x17a73d9fa20 'std::logic_error'
+|     `-CXXRecord 0x17a73d9f990 'logic_error'
+|-CXXConstructorDecl 0x17a73da1010 <line:40:5, col:80> col:14 domain_error 'void (const string &)' implicit-inline
+| |-ParmVarDecl 0x17a73da0f30 <col:27, col:41> col:41 used _Message 'const string &'
+| |-CXXCtorInitializer '_Mybase':'std::logic_error'
+| | `-CXXConstructExpr 0x17a73da1a20 <col:53, col:77> 'logic_error':'std::logic_error' 'void (const char *)'
+| |   `-CXXMemberCallExpr 0x17a73da1868 <col:61, col:76> 'const char *'
+| |     `-MemberExpr 0x17a73da1838 <col:61, col:70> '<bound member function type>' .c_str 0x17a73cce9c0
+| |       `-DeclRefExpr 0x17a73da1818 <col:61> 'const string':'const std::basic_string<char>' lvalue ParmVar 0x17a73da0f30 '_Message' 'const string &'
+| `-CompoundStmt 0x17a73da1a78 <col:79, col:80>
+|-CXXConstructorDecl 0x17a73da1178 <line:42:5, col:70> col:14 domain_error 'void (const char *)' implicit-inline
+| |-ParmVarDecl 0x17a73da10e0 <col:27, col:39> col:39 used _Message 'const char *'
+| |-CXXCtorInitializer '_Mybase':'std::logic_error'
+| | `-CXXConstructExpr 0x17a73da1b00 <col:51, col:67> 'logic_error':'std::logic_error' 'void (const char *)'
+| |   `-ImplicitCastExpr 0x17a73da1ae8 <col:59> 'const char *' <LValueToRValue>
+| |     `-DeclRefExpr 0x17a73da1a98 <col:59> 'const char *' lvalue ParmVar 0x17a73da10e0 '_Message' 'const char *'
+| `-CompoundStmt 0x17a73da1b58 <col:69, col:70>
+|-CXXMethodDecl 0x17a73da1340 <line:36:19> col:19 implicit operator= 'domain_error &(const domain_error &)' inline default noexcept-unevaluated 0x17a73da1340
+| `-ParmVarDecl 0x17a73da1470 <col:19> col:19 'const domain_error &'
+|-CXXMethodDecl 0x17a73da1550 <col:19> col:19 implicit operator= 'domain_error &(domain_error &&)' inline default noexcept-unevaluated 0x17a73da1550
+| `-ParmVarDecl 0x17a73da1680 <col:19> col:19 'domain_error &&'
+`-CXXDestructorDecl 0x17a73da1720 <col:19> col:19 implicit used ~domain_error 'void () noexcept' inline default
+  |-Overrides: [ 0x17a73da0870 logic_error::~logic_error 'void () noexcept' ]
+  `-CompoundStmt 0x17a73da1a88 <col:19>
+
+Dumping main:
+FunctionDecl 0x17a73a04880 <D:\clz\projects\srcv\srcv\c_cpp_tests\.\uaf.cpp:23:1, line:31:1> line:23:5 main 'int ()'
+`-CompoundStmt 0x17a73a051c8 <col:12, line:31:1>
+  |-DeclStmt 0x17a73a04af8 <line:24:3, col:34>
+  | `-VarDecl 0x17a73a04940 <col:3, col:33> col:9 used str 'char *' cinit
+  |   `-CallExpr 0x17a73a04ab8 <col:15, col:33> 'char *'
+  |     |-ImplicitCastExpr 0x17a73a04aa0 <col:15> 'char *(*)(uint64_t)' <FunctionToPointerDecay>
+  |     | `-DeclRefExpr 0x17a73a04a18 <col:15> 'char *(uint64_t)' lvalue Function 0x17a73a03ed8 'allocate_string' 'char *(uint64_t)'
+  |     `-ImplicitCastExpr 0x17a73a04ae0 <col:31> 'uint64_t':'unsigned long long' <IntegralCast>
+  |       `-IntegerLiteral 0x17a73a049f0 <col:31> 'int' 32
+  |-CallExpr 0x17a73a04bf0 <line:25:3, col:22> 'void *'
+  | |-ImplicitCastExpr 0x17a73a04bd8 <col:3> 'void *(*)(void *, int, size_t) __attribute__((cdecl))' <FunctionToPointerDecay>
+  | | `-DeclRefExpr 0x17a73a04bb8 <col:3> 'void *(void *, int, size_t) __attribute__((cdecl))':'void *(void *, int, size_t)' lvalue Function 0x17a732800a8 'memset' 'void *(void *, int, size_t) __attribute__((cdecl))':'void *(void *, int, size_t)'
+  | |-ImplicitCastExpr 0x17a73a04c40 <col:10> 'void *' <BitCast>
+  | | `-ImplicitCastExpr 0x17a73a04c28 <col:10> 'char *' <LValueToRValue>
+  | |   `-DeclRefExpr 0x17a73a04b58 <col:10> 'char *' lvalue Var 0x17a73a04940 'str' 'char *'
+  | |-ImplicitCastExpr 0x17a73a04c58 <col:15> 'int' <IntegralCast>
+  | | `-CharacterLiteral 0x17a73a04b78 <col:15> 'char' 65
+  | `-ImplicitCastExpr 0x17a73a04c70 <col:20> 'size_t':'unsigned long long' <IntegralCast>
+  |   `-IntegerLiteral 0x17a73a04b90 <col:20> 'int' 32
+  |-CallExpr 0x17a73a04da8 <line:26:3, col:21> 'int'
+  | |-ImplicitCastExpr 0x17a73a04d90 <col:3> 'int (*)(const char *const, ...) __attribute__((cdecl))' <FunctionToPointerDecay>
+  | | `-DeclRefExpr 0x17a73a04d10 <col:3> 'int (const char *const, ...) __attribute__((cdecl))':'int (const char *const, ...)' lvalue Function 0x17a730aca28 'printf' 'int (const char *const, ...) __attribute__((cdecl))':'int (const char *const, ...)'
+  | |-ImplicitCastExpr 0x17a73a04dd8 <col:10> 'const char *' <ArrayToPointerDecay>
+  | | `-StringLiteral 0x17a73a04cd0 <col:10> 'const char[4]' lvalue "%s\n"
+  | `-ImplicitCastExpr 0x17a73a04df0 <col:18> 'char *' <LValueToRValue>
+  |   `-DeclRefExpr 0x17a73a04cf0 <col:18> 'char *' lvalue Var 0x17a73a04940 'str' 'char *'
+  |-CallExpr 0x17a73a04ea8 <line:27:3, col:11> 'void'
+  | |-ImplicitCastExpr 0x17a73a04e90 <col:3> 'void (*)(void *) __attribute__((cdecl))' <FunctionToPointerDecay>
+  | | `-DeclRefExpr 0x17a73a04e70 <col:3> 'void (void *) __attribute__((cdecl))':'void (void *)' lvalue Function 0x17a731fb3b0 'free' 'void (void *) __attribute__((cdecl))':'void (void *)'
+  | `-ImplicitCastExpr 0x17a73a04ee8 <col:8> 'void *' <BitCast>
+  |   `-ImplicitCastExpr 0x17a73a04ed0 <col:8> 'char *' <LValueToRValue>
+  |     `-DeclRefExpr 0x17a73a04e50 <col:8> 'char *' lvalue Var 0x17a73a04940 'str' 'char *'
+  |-BinaryOperator 0x17a73a05008 <line:28:3, col:27> 'char *' lvalue '='
+  | |-DeclRefExpr 0x17a73a04f00 <col:3> 'char *' lvalue Var 0x17a73a04940 'str' 'char *'
+  | `-CallExpr 0x17a73a04fc8 <col:9, col:27> 'char *'
+  |   |-ImplicitCastExpr 0x17a73a04fb0 <col:9> 'char *(*)(uint64_t)' <FunctionToPointerDecay>
+  |   | `-DeclRefExpr 0x17a73a04f90 <col:9> 'char *(uint64_t)' lvalue Function 0x17a73a03ed8 'allocate_string' 'char *(uint64_t)'
+  |   `-ImplicitCastExpr 0x17a73a04ff0 <col:25> 'uint64_t':'unsigned long long' <IntegralCast>
+  |     `-IntegerLiteral 0x17a73a04f68 <col:25> 'int' 12
+  |-CallExpr 0x17a73a05118 <line:29:3, col:20> 'int'
+  | |-ImplicitCastExpr 0x17a73a05100 <col:3> 'int (*)(const char *const, ...) __attribute__((cdecl))' <FunctionToPointerDecay>
+  | | `-DeclRefExpr 0x17a73a050e0 <col:3> 'int (const char *const, ...) __attribute__((cdecl))':'int (const char *const, ...)' lvalue Function 0x17a730aca28 'printf' 'int (const char *const, ...) __attribute__((cdecl))':'int (const char *const, ...)'
+  | |-ImplicitCastExpr 0x17a73a05148 <col:10> 'const char *' <ArrayToPointerDecay>
+  | | `-StringLiteral 0x17a73a05070 <col:10> 'const char[3]' lvalue "%c"
+  | `-ImplicitCastExpr 0x17a73a05178 <col:16, col:17> 'int' <IntegralCast>
+  |   `-ImplicitCastExpr 0x17a73a05160 <col:16, col:17> 'char' <LValueToRValue>
+  |     `-UnaryOperator 0x17a73a050c8 <col:16, col:17> 'char' lvalue prefix '*' cannot overflow
+  |       `-ImplicitCastExpr 0x17a73a050b0 <col:17> 'char *' <LValueToRValue>
+  |         `-DeclRefExpr 0x17a73a05090 <col:17> 'char *' lvalue Var 0x17a73a04940 'str' 'char *'
+  `-ReturnStmt 0x17a73a051b8 <line:30:3, col:10>
+    `-IntegerLiteral 0x17a73a05190 <col:10> 'int' 0
+
